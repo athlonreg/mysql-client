@@ -31,7 +31,6 @@ jobs:
     - name: Build and Push
       uses: docker/build-push-action@v2.4.0
       with:
-        context: ./samba
         platforms: linux/arm64,linux/amd64
         push: true
         tags: "canvas1996/mysql-client:8.0,canvas1996/mysql-client:latest"
